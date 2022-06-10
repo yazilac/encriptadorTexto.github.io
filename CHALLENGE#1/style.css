@@ -1,0 +1,109 @@
+body{
+    background-color: antiquewhite;
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+header{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.main{
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+.copyright{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin: 80px  40px 20px;    
+}
+.titulo{
+    font-size: 40px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 30px;
+}
+form{
+    margin: 40px 0;
+}
+form textarea{
+    float: left;
+    margin: 10px 5px 15px 50px;
+    padding: 15px 25px;
+    width: 40%;
+    resize: none;
+    border-radius: 5px;
+
+}
+.caracteres{
+    margin: 0 45px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 15px;
+    color: red
+}
+#encriptar, #desencriptar, #copiar{
+    width: 150px;
+    margin: 50px 6px 10px 200px;
+    padding: 15px 10px;
+    font-size: 20px;
+    background: orange;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*celulares*/
+@media (max-width: 767px){
+    header, .copyright{
+        text-align: center;
+    }
+    form textarea{
+        margin-left: 10px;
+        width: 80%;
+        position:static;
+    }
+    #encriptar, #desencriptar, #copiar{
+        position:static; 
+        width: 90%;
+        margin: 5px 15px 5px 15px;
+        padding: 10px;
+    }
+    .caracteres{
+        display: inline-block;
+        text-align: left;
+        margin: 0 20px;
+    }
+}
+/*para tablet*/
+@media (min-width: 768px) and (max-width: 990px){
+    header, footer{
+        text-align: center;
+    }
+    form textarea{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 0 auto;
+    }
+    #encriptar, #desencriptar, #copiar{
+        position:relative; 
+        width: 20%;
+        margin: 35px 25px 5px  40px;
+        display: inline-block;
+        
+    }
+    .caracteres{
+        display: inline-block;
+        margin: 20px 15px 5px;
+    }
+    .copyright{
+        display:inline-flex;
+        
+    }
+}

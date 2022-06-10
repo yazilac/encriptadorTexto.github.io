@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+        <title>Encriptar</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+    </head>
+
+    <body>
+        <div class="contenedor">
+            <header>
+                <h1 class="titulo">Encriptar Texto</h1>
+            </header>
+            <main>
+                <form>
+                    <textarea cols="20" rows="15" id="mensaje" class="input-ingreso" name="texto" onkeyUP="this.value = this.value.toLowerCase();"placeholder="Ingrese el texto aqui"  ></textarea>
+                    <textarea cols="20" rows="15" id="resultado" class="input-resultado" placeholder="Resultado..." readonly></textarea>   
+                    <h3 class="caracteres"><span id="contador">0</span> / (Cantidad de caracteres)</h3> 
+    
+                </form>
+                
+                <div class="contenedor">
+                    <button id="encriptar">Encriptar</button>
+                    <button id="desencriptar">Desencriptar</button>
+                    <button id="copiar">Copiar</button>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p class="copyright">&copy Copyright Challenge Alura YazminIlamaCastro-2022</p>
+        </footer>
+        
+        <script src="codigo.js"></script>
+    </body>
+
+
+
+</html> 
+
